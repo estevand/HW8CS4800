@@ -1,0 +1,124 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+left to right direction
+
+object "<u>testDocument:Document</u>" as td {
+charactersProperties = [characters]
+}
+
+object "<u>testCharacters:Character</u>" as tc1 {
+    character = H
+}
+
+object "<u>testCharacters:Character</u>" as tc2 {
+    character = e
+}
+
+object "<u>testCharacters:Character</u>" as tc3 {
+    character = l
+}
+
+object "<u>testCharacters:Character</u>" as tc4 {
+    character = l
+}
+
+object "<u>testCharacters:Character</u>" as tc5 {
+    character = o
+}
+
+object "<u>testCharacters:Character</u>" as tc6 {
+    character = W
+}
+
+object "<u>testCharacters:Character</u>" as tc7 {
+    character = o
+}
+
+object "<u>testCharacters:Character</u>" as tc8 {
+    character = r
+}
+
+object "<u>testCharacters:Character</u>" as tc9 {
+    character = l
+}
+
+object "<u>testCharacters:Character</u>" as tc10 {
+    character = d
+}
+
+object "<u>testCharacters:Character</u>" as tc11 {
+    character = C
+}
+
+object "<u>testCharacters:Character</u>" as tc12 {
+    character = S
+}
+
+object "<u>testCharacters:Character</u>" as tc13 {
+    character = 5
+}
+
+object "<u>testCharacters:Character</u>" as tc14 {
+    character = 8
+}
+
+object "<u>testCharacters:Character</u>" as tc15 {
+    character = 0
+}
+
+object "<u>testCharacters:Character</u>" as tc16 {
+    character = 0
+}
+
+object "<u>properties1:CharacterProperty</u>" as p1 {
+    Properties = {Arial, Black, 16}
+}
+
+object "<u>properties2:CharacterProperty</u>" as p2 {
+    Properties = {Arial, Black, 14}
+}
+
+object "<u>properties3:CharacterProperty</u>" as p3 {
+    Properties = {Verdana, Blue, 18}
+}
+
+object "<u>properties4:CharacterProperty</u>" as p4 {
+    Properties = {Verdana, Red, 12}
+}
+
+td <-- tc1
+td <-- tc2
+td <-- tc3
+td <-- tc4
+td <-- tc5
+td <-- tc6
+td <-- tc7
+td <-- tc8
+td <-- tc9
+td <-- tc10
+td <-- tc11
+td <-- tc12
+td <-- tc13
+td <-- tc14
+td <-- tc15
+td <-- tc16
+
+tc1 <-- p1
+tc6 <-- p1
+tc2 <-- p2
+tc3 <-- p2
+tc4 <-- p2
+tc5 <-- p2
+tc7 <-- p2
+tc8 <-- p2
+tc9 <-- p2
+tc10 <-- p2
+tc11 <-- p3
+tc12 <--p3
+tc13 <-- p4
+tc14 <-- p4
+tc15 <-- p4
+tc16 <-- p4
+
+@enduml
